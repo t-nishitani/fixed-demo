@@ -1,0 +1,30 @@
+body {
+    margin: auto;
+}
+body#brand {
+    background: url('../images/brand/background.jpg') fixed no-repeat;
+    background-position: center 90px;
+}
+body#message {
+    background: url('../images/message/background.jpg') fixed no-repeat;
+    background-position: center 90px;
+}
+div.wrap {
+    position: relative;
+    width: 962px;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    height: 83px;
+    width: 962px;
+    margin: 0 auto;
+    background: url('../images/head.png');
+    z-index: 10;
+}
+article {
+    position: relative;
+    top: 95px;
+    z-index: 0;
+}
