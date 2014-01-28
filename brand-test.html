@@ -10,32 +10,20 @@
     <![endif]-->
 </head>
 <body id="brand">
-    <div class="wrap">
-        <header id="header" class="">
+    <div id="background">
 
-        </header><!-- /header -->
-        <div id="wrapper">
-            <div id ="scroller">
+    </div>
+    <div class="wrapper">
+        <div class="wrap">
+            <header id="header" class="">
+
+            </header><!-- /header -->
+            <article id ="scroller">
                 <img src="images/brand/contents.png">
-            </div>
+            </article>
         </div>
     </div>
-    <script src="iscroll/build/iscroll.js" type="text/javascript" charset="utf-8" async defer></script>
-    <script >
-        var myScroll;
-        var a = 0;
-        function loaded() {
-            setHeight();
-            myScroll = new iScroll('scroller', {desktopCompatibility:true});
-        }
-        function setHeight() {
-            var headerH = document.getElementById('header').offsetHeight,
-                wrapperH = window.innerHeight - headerH;
-            document.getElementById('wrapper').style.height = wrapperH + 'px';
-        }
-        window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-        document.addEventListener('DOMContentLoaded', loaded, false);
-    </script>
+
+
 </body>
 </html>

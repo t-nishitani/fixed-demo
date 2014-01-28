@@ -2,8 +2,7 @@ body {
     margin: auto;
 }
 body#brand {
-    background: url('../images/brand/background.jpg') fixed no-repeat;
-    background-position: center 90px;
+
 }
 body#message {
     background: url('../images/message/background.jpg') fixed no-repeat;
@@ -14,11 +13,13 @@ div.wrap {
     width: 962px;
     margin: 0 auto;
 }
-div#wrapper {
-    position: relative;
-    z-index: 1;
+body#brand div#background {
+    position: fixed;
+    top: 90px;
+    height: 703px;
     width: 100%;
-    overflow: hidden;
+    background: url('../images/brand/background.jpg') fixed no-repeat;
+    z-index: -1000;
 }
 header {
     position: fixed;
