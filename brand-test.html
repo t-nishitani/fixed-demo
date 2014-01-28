@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ペスカデモ</title>
+    <link rel="stylesheet" href="css/style-test.css">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="brand">
+    <div class="wrap">
+        <header id="header" class="">
+
+        </header><!-- /header -->
+        <article id="wrapper">
+            <div id ="scroller">
+                <img src="images/brand/contents.png">
+            </div>
+        </article>
+    </div>
+    <script src="iscroll/src/core.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script >
+        var myScroll;
+        var a = 0;
+        function loaded() {
+            setHeight();
+            myScroll = new iScroll('scroller', {desktopCompatibility:true});
+        }
+        function setHeight() {
+            var headerH = document.getElementById('header').offsetHeight,
+                footerH = document.getElementById('footer').offsetHeight,
+                wrapperH = window.innerHeight - headerH - footerH;
+            document.getElementById('wrapper').style.height = wrapperH + 'px';
+        }
+        window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
+</body>
+</html>
