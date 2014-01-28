@@ -20,7 +20,7 @@
             </div>
         </article>
     </div>
-    <script src="iscroll/src/core.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="iscroll/build/iscroll.js" type="text/javascript" charset="utf-8" async defer></script>
     <script >
         var myScroll;
         var a = 0;
@@ -30,8 +30,7 @@
         }
         function setHeight() {
             var headerH = document.getElementById('header').offsetHeight,
-                footerH = document.getElementById('footer').offsetHeight,
-                wrapperH = window.innerHeight - headerH - footerH;
+                wrapperH = window.innerHeight - headerH;
             document.getElementById('wrapper').style.height = wrapperH + 'px';
         }
         window.addEventListener('onorientationchange' in window ? 'orientationchange' : 'resize', setHeight, false);
