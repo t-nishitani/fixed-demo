@@ -18,7 +18,7 @@ body#brand div#background {
     top: 90px;
     height: 703px;
     width: 100%;
-    background: url('../images/brand/background.jpg') no-repeat;
+
     z-index: -1000;
 }
 header {
